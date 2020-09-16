@@ -20,6 +20,18 @@ public class JsopDom {
 
         //1.    根据id查询元素getElementById
         Element elementById = document.getElementById("comments");
+        //1.   从元素中获取id
+        String id = elementById.id();
+        //2.   从元素中获取className
+        String className = elementById.className();
+        //3.   从元素中获取属性的值attr
+        String id1 = elementById.attr("id");
+        //4.   从元素中获取所有属性attributes
+        String attributes = elementById.attributes().toString();
+        //5.   从元素中获取文本内容text
+        String text = elementById.text();
+        System.out.println("-----------元素中获取数据-----------");
+        System.out.println(id+" "+className+" "+id1+" "+attributes+" "+text);
         System.out.println("--------------id = comments-----------");
         System.out.println(elementById);
         //2.   根据标签获取元素getElementsByTag
